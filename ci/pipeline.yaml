@@ -21,7 +21,7 @@ jobs:
     trigger: true
     version: every
   - put: pull-request
-    comment: "testing comment"
+    comment: "testing comment again"
     params:
       path: pull-request
       status: pending
