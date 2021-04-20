@@ -1,0 +1,14 @@
+resources:
+- name: resource-tutorial
+  type: git
+  source:
+    uri: https://github.com/riguillen/bitcamp2018.git
+    branch: master
+
+jobs:
+  - name: job-hello-world
+    public: true
+    plan:
+      - get: resource-tutorial
+      - task: hello-world
+        file: bitcamp2018/ci/hello_world.yml
